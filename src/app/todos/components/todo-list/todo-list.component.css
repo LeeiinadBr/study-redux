@@ -1,0 +1,15 @@
+.todo-list-group {
+    padding: 20px;
+}
+
+input {
+    margin-right: 3px;
+}
+
+span {
+    margin-right: 3px;
+}
+
+.checked { 
+    text-decoration: line-through;
+}

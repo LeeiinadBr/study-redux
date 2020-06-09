@@ -1,0 +1,14 @@
+<div class="todo-list-group">
+    <h2>Todo List</h2>
+    <input
+        (keyup.enter)="add(todo)"
+        #todo
+        type="text">
+    <button (click)="add(todo)">Add</button>
+
+    <ul>
+        <li *ngFor="let todo of todosList | async">
+            <span (click)="check(todo)" [class.checked]="todo.isChecked">{{ todo.content }}</span><button (click)="remove(todo)">Remove</button>
+        </li>
+    </ul>
+</div>

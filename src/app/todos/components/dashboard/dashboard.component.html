@@ -1,0 +1,6 @@
+<div class="dashboard">
+    <h2>Dashboard</h2>
+    <p>Last Update: {{ lastUpdate | async }}</p>
+    <p>Total items: {{ totalItems | async }}</p>
+    <button (click)="deleteTodos()">Delete All</button>
+</div>
